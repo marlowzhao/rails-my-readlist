@@ -9,12 +9,19 @@
 
 .logo-box {
   position: absolute;
+  top: 40px;
+  left: 40px;
 
 }
 
 .logo-box img {
   height: 100px;
   width: 100px;
+  animation: moveInRight 2s;
+}
+
+.logo-box img:hover {
+  transform: scale(1.2);
 }
 
 .text-box {
@@ -23,4 +30,46 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+ }
+
+ .main-text {
+  display: block;
+  animation: moveInLeft 1s ease-in;
+ }
+
+ .sub-text {
+  display: block;
+  animation: moveInRight 2s ease-out;
+ }
+
+
+ @keyframes moveInRight {
+    0% {
+      opacity: 0.2;
+      transform: translateX(100px);
+    }
+
+    50% {
+      transform: (50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+ }
+
+ @keyframes moveInLeft {
+    0% { opacity: 0.2;
+      transform: translateX(-100px);
+    }
+    50% {
+      transform:rotate(-90deg);
+    }
+
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+
  }
