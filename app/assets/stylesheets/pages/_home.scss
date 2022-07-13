@@ -1,9 +1,13 @@
 // Specific CSS for your home-page
-.header {
+body {
+color: black;
+text-shadow: 5px;
+}
+
+header {
   height: 95vh;
-  background-image: linear-gradient(
-    #7ed56fc4,
-    #28b485b3);
+  background-image:linear-gradient(to left bottom, #5da5a738,#2472b649),
+    url(https://img.freepik.com/free-vector/people-library-flat-vector-illustration_74855-6607.jpg?t=st=1657703356~exp=1657703956~hmac=cb368d0843f2b8834c0e0c21c0fad2db532046811d5b7d07ebf9c03a710b32dd&w=1800);
   block-size: cover;
   background-position: top;
   position: relative;
